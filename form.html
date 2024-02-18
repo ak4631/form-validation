@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="form-data">
+        <form
+          action=""
+          method="post"
+          name="myForm"
+          onsubmit="return validateForm()"
+        >
+          <h1>Sign Up</h1>
+          <label for="fname"
+            >First Name
+            <i class="fa-solid fa-asterisk fa-xs" style="color: #de1102"></i
+          ></label>
+          <input type="text" id="fname" name="fname" required />
+          <div id="error-fname" class="formError"></div>
+          <label for="lname"
+            >Last Name
+            <i class="fa-solid fa-asterisk fa-xs" style="color: #de1102"></i
+          ></label>
+          <input type="text" id="lname" name="lname" required />
+          <div id="error-lname" class="formError"></div>
+          <label for="usermail"
+            >Email
+            <i class="fa-solid fa-asterisk fa-xs" style="color: #de1102"></i
+          ></label>
+          <input type="email" id="usermail" name="usermail" required />
+          <div id="error-email" class="formError"></div>
+          <label for="confusermail"
+            >Confirm Email
+            <i class="fa-solid fa-asterisk fa-xs" style="color: #de1102"></i
+          ></label>
+          <input type="email" id="confusermail" name="confusermail" required />
+          <div id="error-confmail" class="formError"></div>
+          <label for="passcode"
+            >Password
+            <i class="fa-solid fa-asterisk fa-xs" style="color: #de1102"></i
+          ></label>
+          <input type="password" id="passcode" name="passcode" required />
+          <div id="error-password" class="formError"></div>
+          <div>
+            <label for="gender"
+              >Gender
+              <i class="fa-solid fa-asterisk fa-xs" style="color: #de1102"></i
+            ></label>
+            Male <input type="radio" name="gender" value="Male" /> Female
+            <input type="radio" name="gender" value="Female" /> Others
+            <input type="radio" name="gender" value="Others" />
+          </div>
+
+          <input type="submit" value="Create Account" />
+        </form>
+      </div>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
